@@ -2,21 +2,24 @@ import React from 'react'
 import image from '../Assets/image1.png'
 import gec from '../Assets/geclogo.jpg'
 import intensa from '../Assets/intensalogo.jpg'
+
 const Home = (props) => {
 
   return (
     <div>
       <div className="center-align container">
-        <img className="responsive-img" src={image} />
+        <img className="responsive-img title-image" src={image} />
         <div className="row">
-          <div className="col s12 l2 m2 offset-l3 offset-m2 "><h6>Presented by</h6></div>
-          <div className="col s12 l1 m2 "><img src={gec} height="50px" /></div>
-          <div className="col s12 l1 m1 "><h6>and</h6></div>
-          <div className="col s12 l1 m2 "><img src={intensa} height="50px" /></div>
+          <div className="col s12 l2 m2 offset-l3 offset-m3 center-align "><h6>Presented by</h6></div>
+          <div className="col s4 l1 m2 offset-s1 right-align"><img src={gec} height="50px" /></div>
+          <div className="col s2 l1 m1 "><h6>and</h6></div>
+          <div className="col s4 l1 m2 left-align"><img src={intensa} height="50px" /></div>
         </div>
-        <a className="btn-large indigo darken-3 center" target="_blank" href="https://forms.gle/vG49Q7HFaZVjoE8b9">Register</a>
+        <div className="register-button"><a className="btn-large indigo darken-3 center waves-effect waves-light" target="_blank" href="https://forms.gle/vG49Q7HFaZVjoE8b9">Register</a></div>
       </div>
-      <table className="highlight centered table-status-sheet hide-on-med-and-down"> 
+      <div className="box hide-on-large" height="1000px !important"/>
+      <div className="container table-div">
+      <table className="highlight centered "> 
         <tbody>
           <tr height="22px">
             <td width="36.2667px height: 22px;">&nbsp;Day</td>
@@ -111,6 +114,7 @@ const Home = (props) => {
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
   )
 }

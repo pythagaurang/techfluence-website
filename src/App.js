@@ -6,6 +6,7 @@ import Events from './Components/events'
 import Rules from './Components/rules'
 import { Route, BrowserRouter,Switch} from 'react-router-dom'
 import Footer from './Components/footer'
+
 class App extends Component{
   render(){
     return(

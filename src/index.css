@@ -68,15 +68,22 @@ code {
   width:70% !important;
 }
 
-
-.header-box{
-  height:1000px;
+.title-image{
+    padding-top:20%;
+}
+.register-button{
+  padding-top: 15%;
+  padding-bottom:30%;
+}
+.table-div{
+  padding-top:10%;
+  padding-bottom: 15%;
 }
 
 table{
-  height:"294px" !important;
-  width:"885px" !important;
-  overflow: auto !important;
+  height: 60%;
+  width: 100%;
+  overflow-x: scroll !important;
 }
 
 table td{
