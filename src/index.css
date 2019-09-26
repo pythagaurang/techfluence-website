@@ -9,5 +9,76 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  monospace;
+}
+
+.logotext {
+  padding:10px;
+  padding-top:100px;
+}
+
+.brand{
+  padding-top: 0.5%;
+}
+.brand-logo{
+  max-height: 50px;
+  width:auto;
+}
+
+.home .event img{
+  position: absolute;
+  top:5px;
+  left: -32px;
+  opacity: 0.5;
+  max-height: 100px;
+  width:auto;
+}
+
+.home .event{
+  overflow:hidden;
+  padding-left:60px;
+}
+
+.home .workshop img{
+  position: absolute;
+  left: -30px;
+  opacity: 0.5;
+  max-height: 100px;
+  width:auto;
+}
+
+.home .workshop{
+  overflow:hidden;
+  padding-left:60px;
+}
+
+.card-content{
+  position: relative;
+  left:50px;
+}
+
+.collection .collection-item.active  {
+  background-color: #283593 !important;
+  color:#fff !important;
+}
+.collection .collection-item{
+  color:#000 !important;
+}
+.sidenav{
+  width:70% !important;
+}
+
+
+.header-box{
+  height:1000px;
+}
+
+table{
+  height:"294px" !important;
+  width:"885px" !important;
+  overflow: auto !important;
+}
+
+table td{
+  border: 1px solid #000 !important;
 }
