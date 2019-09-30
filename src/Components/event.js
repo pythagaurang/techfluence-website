@@ -17,12 +17,12 @@ class event extends Component{
       <div class="card-image">
       <img classname="card-Image l3 " src = {require('../Assets/'+event.id+'.png')}  alt={"image:"+event.title}/>
       </div>
-      <div class="card-content">
+      <div class="card-content truncate">
         {event.shortdesc}
       </div>
       <div class="card-action">
-     
-      <span className="card-title orange-text lighten-1"><b>{event.title}</b></span>
+    
+      <span className="card-title orange-text lighten-1 truncate"><b>{event.title}</b></span>
       </div>
     </div>
     </Link>
