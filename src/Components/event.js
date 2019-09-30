@@ -14,7 +14,7 @@ class event extends Component{
   <div class="col s12 m6 l4">
     <div class="card">
       <div class="card-image">
-      <img classname="card-Image l3 " src = {require('../Assets/'+event.id+'.png')} />
+      <img classname="card-Image l3 " src = {require('../Assets/'+event.id+'.png')}  alt={"image:"+event.title}/>
       </div>
       <div class="card-content">
         {event.shortdesc}
