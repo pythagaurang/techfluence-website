@@ -7,21 +7,17 @@ import { Link, NavLink, withRouter } from 'react-router-dom';
 import header from '../Assets/header.png'
 
 class Home extends Component{
+      
   componentDidMount(){
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.parallax');
-      var instances = M.Parallax.init(elems, {});
-    }); 
-    console.log(header)
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, {});
   }
-  componentDidUnmount(){
-    console.log(header)
-  }
+
   render () {
   return (
     <div>
       <div className="center-align parallax-container">
-  <div className="parallax black"><img className="background-image" src={header}/></div>
+  <div className="parallax "><img className="background-image" src={header}/></div>
         <img className="responsive-img title-image" src={image} />
         <div className="row">
           <div className="col s12 l2 m2 offset-l3 offset-m3 center-align white-text"><h5>Presented by</h5></div>
