@@ -20,10 +20,10 @@ class Home extends Component{
       <div class="parallax"><img src={header}></img></div>
         <img className="responsive-img title-image" src={image} />
         <div className="row">
-          <div className="col s12 l2 m2 offset-l3 offset-m3 center-align "><h6>Presented by</h6></div>
-          <div className="col s4 l1 m2 offset-s1 right-align"><img src={gec} height="70px" /></div>
-          <div className="col s2 l1 m1 "><h6>and</h6></div>
-          <div className="col s4 l1 m2 left-align"><img src={intensa} height="70px" /></div>
+          <div className="col s12 l2 m2 offset-l3 offset-m3 center-align white-text"><h5>Presented by</h5></div>
+          <div className="col s4 l1 m2 offset-s1 right-align"><img src={gec} height="90px" /></div>
+          <div className="col s2 l1 m1 white-text"><h6>and</h6></div>
+          <div className="col s4 l1 m2 left-align"><img src={intensa} height="90px" /></div>
         </div>
         <div className="register-button"><a className="btn-large indigo darken-3 center waves-effect waves-light" target="_blank" href="https://forms.gle/vG49Q7HFaZVjoE8b9">Register</a></div>
         </div>
