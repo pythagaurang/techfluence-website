@@ -2,9 +2,9 @@ import React,{Component} from 'react'
 import image from '../Assets/image2.png'
 import gec from '../Assets/geclogo.png'
 import intensa from '../Assets/intensalogo.png'
-import header from '../Assets/header.jpg'
 import M from "materialize-css/dist/js/materialize.min.js";
 import { Link, NavLink, withRouter } from 'react-router-dom';
+import header from '../Assets/header.png'
 
 class Home extends Component{
   componentDidMount(){
@@ -12,13 +12,16 @@ class Home extends Component{
       var elems = document.querySelectorAll('.parallax');
       var instances = M.Parallax.init(elems, {});
     }); 
+    console.log(header)
+  }
+  componentDidUnmount(){
+    console.log(header)
   }
   render () {
   return (
     <div>
       <div className="center-align parallax-container">
-      <div>
-      <div className="parallax"><img src={header}></img></div>
+  <div className="parallax black"><img className="background-image" src={header}/></div>
         <img className="responsive-img title-image" src={image} />
         <div className="row">
           <div className="col s12 l2 m2 offset-l3 offset-m3 center-align white-text"><h5>Presented by</h5></div>
@@ -27,7 +30,6 @@ class Home extends Component{
           <div className="col s4 l1 m2 left-align"><img src={intensa} height="90px" /></div>
         </div>
         <div className="register-button"><a className="btn-large pink center waves-effect wavesmaroon-light"target="_blank" href="https://forms.gle/vG49Q7HFaZVjoE8b9">Register</a></div>
-        </div>
       </div>
       <div className="section center-align">
       <span><h3>Schedulde</h3></span>
