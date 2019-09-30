@@ -11,7 +11,8 @@ class event extends Component{
     const eventList = events.length ? (
       events.map(event => {
         return(        
-  <div class="col s12 m6 l4">
+  <div class="col s12 m6 l4 ">
+     <Link to={'/events/' + event.id}>
     <div class="card">
       <div class="card-image">
       <img classname="card-Image l3 " src = {require('../Assets/'+event.id+'.png')}  alt={"image:"+event.title}/>
@@ -20,11 +21,11 @@ class event extends Component{
         {event.shortdesc}
       </div>
       <div class="card-action">
-      <Link to={'/events/' + event.id}>
-      <span className="card-title"><b>{event.title}</b></span>
-      </Link>
+     
+      <span className="card-title orange-text lighten-1"><b>{event.title}</b></span>
       </div>
     </div>
+    </Link>
   </div>
         )
         })
