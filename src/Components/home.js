@@ -18,7 +18,7 @@ class Home extends Component{
     <div>
       <div className="center-align parallax-container">
       <div>
-      <div class="parallax"><img src={header}></img></div>
+      <div className="parallax"><img src={header}></img></div>
         <img className="responsive-img title-image" src={image} />
         <div className="row">
           <div className="col s12 l2 m2 offset-l3 offset-m3 center-align white-text"><h5>Presented by</h5></div>
@@ -50,23 +50,23 @@ class Home extends Component{
             <tr height="22px">
             <td width="36.2667px" height="22px">&nbsp;1</td>
             <td width="136.733px" height="22px">&nbsp;IT Auditorium</td>
-            <td width="272px" height="22px" colspan="3">&nbsp;&nbsp; <a>Inaugration Ceremony</a></td>
+            <td width="272px" height="22px" colSpan="3">&nbsp;&nbsp; <a>Inaugration Ceremony</a></td>
             <td width="86px" height="22px">&nbsp;</td>
             <td width="85px" height="22px">&nbsp;</td>
-            <td width="258px" height="22px" colspan="3">&nbsp;&nbsp;<NavLink exact to='/events/10'>GitHub Pages Session</NavLink></td>
+            <td width="258px" height="22px" colSpan="3">&nbsp;&nbsp;<NavLink exact to='/events/10'>GitHub Pages Session</NavLink></td>
           </tr>
           <tr height="22px">
             <td width="36.2667px" height="22px">&nbsp;</td>
             <td width="136.733px" height="22px">&nbsp;Mining Auditorium</td>
             <td width="86px" height="22px">&nbsp;</td>
-            <td width="615px" height="22px" colspan="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <NavLink exact to='/events/1'>UXplorer - Session</NavLink></td>
+            <td width="615px" height="22px" colSpan="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <NavLink exact to='/events/1'>UXplorer - Session</NavLink></td>
           </tr>
           <tr height="22px">
             <td width="36.2667px" height="22px">&nbsp;</td>
             <td width="136.733px" height="22px">&nbsp;Tech Zone Lab</td>
             <td width="86px" height="22px">&nbsp;</td>
             <td width="100px" heigh="22px">&nbsp;</td>
-            <td width="515px" height="22px" colspan="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <NavLink exact to='/events/2'>Invasion</NavLink></td>
+            <td width="515px" height="22px" colSpan="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <NavLink exact to='/events/2'>Invasion</NavLink></td>
           </tr>
           <tr height="22px">
             <td width="36.2667px" height="22px">&nbsp;</td>
@@ -75,12 +75,12 @@ class Home extends Component{
             <td width="100px" heigh="22px">&nbsp;</td>
             <td width="86px" height="22px">&nbsp;</td>
             <td width="86px" height="22px">&nbsp;</td>
-            <td width="343px" height="22px" colspan="4">&nbsp;&nbsp;&nbsp;<NavLink exact to='/events/6'>Forager</NavLink></td>
+            <td width="343px" height="22px" colSpan="4">&nbsp;&nbsp;&nbsp;<NavLink exact to='/events/6'>Forager</NavLink></td>
           </tr>
           <tr height="22px">
             <td width="36.2667px" height="22px">&nbsp;2</td>
             <td width="136.733px" height="22px">&nbsp;Fundamentals Lab</td>
-            <td width="529px" height="22px" colspan="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <NavLink exact to='/events/1'>UXplorer - Competition</NavLink></td>
+            <td width="529px" height="22px" colSpan="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <NavLink exact to='/events/1'>UXplorer - Competition</NavLink></td>
             <td width="86px" height="22px">&nbsp;</td>
             <td width="86px" height="22px">&nbsp;</td>
           </tr>
@@ -91,7 +91,7 @@ class Home extends Component{
             <td width="100px" height="9px">&nbsp;</td>
             <td width="86px" height="9px">&nbsp;</td>
             <td width="86px" height="9px">&nbsp;</td>
-            <td width="171px" height="9px" colspan="2">&nbsp;<NavLink exact to='/events/4'>Let&nbsp; The Design Speak</NavLink></td>
+            <td width="171px" height="9px" colSpan="2">&nbsp;<NavLink exact to='/events/4'>Let&nbsp; The Design Speak</NavLink></td>
             <td width="86px" height="9px">&nbsp;</td>
             <td width="86px" height="9px">&nbsp;</td>
           </tr>
@@ -112,7 +112,7 @@ class Home extends Component{
             <td width="136.733px" height="22px">&nbsp;Tech Zone</td>
             <td width="86px" height="22px">&nbsp;</td>
             <td width="100px" heigh="22px">&nbsp;</td>
-            <td width="343px" height="22px" colspan="4">
+            <td width="343px" height="22px" colSpan="4">
             <NavLink exact to='/events/3'>Code IT</NavLink>
             </td>
             <td width="86px" height="22px">&nbsp;</td>
@@ -121,10 +121,10 @@ class Home extends Component{
           <tr height="22px">
             <td width="36.2667px" height="22.6834px">&nbsp;</td>
             <td width="136.733px" height="22.6834px">IT Auditorium</td>
-            <td width="86px" height="22.6834px" colspan="4">&nbsp;&nbsp;&nbsp;<NavLink exact to='/events/9'> Spark AR Session</NavLink></td>
+            <td width="86px" height="22.6834px" colSpan="4">&nbsp;&nbsp;&nbsp;<NavLink exact to='/events/9'> Spark AR Session</NavLink></td>
             <td width="86px" height="22.6834px">&nbsp;</td>
             <td width="86px" height="22.6834px">&nbsp;</td>
-            <td width="86px" height="22.6834px" colspan="2">&nbsp;<a>Valedictory</a></td>
+            <td width="86px" height="22.6834px" colSpan="2">&nbsp;<a>Valedictory</a></td>
           </tr>
         </tbody>
       </table>

@@ -8,6 +8,9 @@ import { Route, BrowserRouter,Switch} from 'react-router-dom'
 import Footer from './Components/footer'
 
 class App extends Component{
+  componentDidMount(){
+    console.log('Hello, I\'m Gaurang Govekar. I made this site using ReactJS and materialise.css. Only the console enthusiast must know that I made this page. I\'m not into webdev but get in touch with me @pythagaurang on instagram if you have any advice or critic or you just happen to read this.');
+  }
   render(){
     return(
       <BrowserRouter>
