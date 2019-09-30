@@ -12,14 +12,14 @@ class events extends Component {
         <h3 className="center-align"><b>{this.props.event.title}</b></h3>
         {this.props.event.collab  ? (<h6>In collaboration with {this.props.event.collab}</h6>):(<p/>)}
         <h4 className="center-align">Details</h4>
-        <p>Date : {this.props.event.day}</p>
-        {this.props.event.time  ? (<div><p>Time : {this.props.event.time[0]}</p><p>{this.props.event.time[1]}</p><p>{this.props.event.time[2]}</p></div>):(<p></p>)}
-        {this.props.event.venue  ? (<p>Venue : {this.props.event.venue}</p>):(<p/>)}
-        {this.props.event.team  ? (<p>Team : {this.props.event.team}</p>):(<p/>)}
-        {this.props.event.coordinator  ? (<div><p>Coordinator : {this.props.event.coordinator[0]}</p><p>{this.props.event.coordinator[1]}</p><p>{this.props.event.coordinator[2]}</p></div>):(<p/>)}
-        {this.props.event.faculty  ? (<div><p>Faculty Coordinator : {this.props.event.faculty[0]}</p><p>{this.props.event.faculty[1]}</p><p>{this.props.event.faculty[2]}</p></div>):(<p/>)}
+        {this.props.event.day  ? (<div><p><b>Date</b></p><p>{this.props.event.day}</p></div>):(<p/>)}
+        {this.props.event.time  ? (<div><p><b>Time</b></p><p>{this.props.event.time[0]}</p><p>{this.props.event.time[1]}</p><p>{this.props.event.time[2]}</p></div>):(<p></p>)}
+        {this.props.event.venue ? (<div><p><b>Venue</b></p><p>{this.props.event.venue}</p></div>):(<p/>)}
+        {this.props.event.team  ? (<div><p><b>Team</b></p><p>{this.props.event.team}</p></div>):(<p/>)}
+        {this.props.event.coordinator  ? (<div><p><b>Co-ordinators</b></p><p>{this.props.event.coordinator[0]}</p><p>{this.props.event.coordinator[1]}</p><p>{this.props.event.coordinator[2]}</p></div>):(<p/>)}
+        {this.props.event.faculty  ? (<div><p><b>Faculty Co-ordinators</b></p><p>{this.props.event.faculty[0]}</p><p>{this.props.event.faculty[1]}</p><p>{this.props.event.faculty[2]}</p></div>):(<p/>)}
         <h4 className="center-align">Instructions</h4>
-        <Eventlist rules={this.props.event.rules}/>
+        <Eventlist rules={this.props.event.rules} />
       </div>
     ) : (
       <div className="center">Loading event...</div>

@@ -28,6 +28,7 @@ class Footer extends Component{
         <div class="footer-copyright">
           <div class="container">
           © 2019 TechFluence
+          <a class="grey-text text-lighten-4 right" href="https://github.com/pythagaurang/techfluence-website/"><i className="fab fa-github"></i> Github</a>
           </div>
         </div>
       </footer>
