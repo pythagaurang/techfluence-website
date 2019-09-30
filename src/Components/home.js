@@ -25,7 +25,7 @@ class Home extends Component{
           <div className="col s2 l1 m1 white-text"><h6>and</h6></div>
           <div className="col s4 l1 m2 left-align"><img src={intensa} height="90px" /></div>
         </div>
-        <div className="register-button"><a className="btn-large indigo darken-3 center waves-effect waves-light" target="_blank" href="https://forms.gle/vG49Q7HFaZVjoE8b9">Register</a></div>
+        <div className="register-button"><a className="btn-large pink center waves-effect wavesmaroon-light"target="_blank" href="https://forms.gle/vG49Q7HFaZVjoE8b9">Register</a></div>
         </div>
       </div>
       <div className="container center-align table-div section">
