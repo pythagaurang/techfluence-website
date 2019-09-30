@@ -6,7 +6,6 @@ import {connect} from 'react-redux'
 class event extends Component{
 
   render() {
-    console.log(this.props)
     const { events } = this.props;
     const eventList = events.length ? (
       events.map(event => {
