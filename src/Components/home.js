@@ -29,8 +29,9 @@ class Home extends Component{
         <div className="register-button"><a className="btn-large pink center waves-effect wavesmaroon-light"target="_blank" href="https://forms.gle/vG49Q7HFaZVjoE8b9">Register</a></div>
         </div>
       </div>
-      <div className="container center-align table-div section">
-        <span><h3>Schedulde</h3></span>
+      <div className="section center-align">
+      <span><h3>Schedulde</h3></span>
+      <div className="container center-align table-div">
       <table className="highlight centered schedulde ">   
       <thead></thead>
       <tbody></tbody>
@@ -128,6 +129,7 @@ class Home extends Component{
           </tr>
         </tbody>
       </table>
+      </div>
       </div>
     </div>
   )

@@ -26,8 +26,55 @@ const Rules = (props) =>{
                     <ol>
                         <li><p>Free entry.</p></li>
                         <li><p>If an individual gets first or second plae then winner will be awarded with prizes and certificates.</p></li>
-                    </ol></li>
+                    </ol>
+                </li>
             </ol>
+            <h4><b>Points System</b></h4>
+            <ol type="disc">
+            <li><b>Priority 1</b>
+                <ol><li><p>UXplorer</p></li>
+                    <li><p>Invasion</p></li>
+                    <li><p>Code It</p></li>
+                </ol>
+            </li>
+            <li><b>Priority 2</b>
+                <ol><li><p>Let the Design Speak</p></li>
+                    <li><p>Brain Wars</p></li>
+                    <li><p>Forager</p></li>
+                </ol>
+            </li>
+            <li><b>Priority 3</b>
+                    <ol><li><p>Photography</p></li>
+                        <li><p>Meme on It </p></li>
+                    </ol>
+            </li>
+            </ol>
+            <div className="container points">
+            <table className="points-table">
+                <tbody>
+                    <tr>
+                        <td><b>Events Type</b></td>
+                        <td><b>First Place</b></td>
+                        <td><b>Second Place</b></td>
+                    </tr>
+                    <tr>
+                        <td>Priority 1</td>
+                        <td>200 points</td>
+                        <td>100 points</td>
+                    </tr>
+                    <tr>
+                        <td>Priority 2</td>
+                        <td>150 points</td>
+                        <td>75 points</td>
+                    </tr>
+                    <tr>
+                        <td>Priority 3</td>
+                        <td>75 points</td>
+                        <td>50 points</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
         </div>
     )
 }
