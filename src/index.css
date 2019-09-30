@@ -25,38 +25,6 @@ code {
   width:auto;
 }
 
-.home .event img{
-  position: absolute;
-  top:5px;
-  left: -32px;
-  opacity: 0.5;
-  max-height: 100px;
-  width:auto;
-}
-
-.home .event{
-  overflow:hidden;
-  padding-left:60px;
-}
-
-.home .workshop img{
-  position: absolute;
-  left: -30px;
-  opacity: 0.5;
-  max-height: 100px;
-  width:auto;
-}
-
-.home .workshop{
-  overflow:hidden;
-  padding-left:60px;
-}
-
-.card-content{
-  position: relative;
-  left:50px;
-}
-
 .collection .collection-item.active  {
   background-color: #283593 !important;
   color:#fff !important;
@@ -64,28 +32,54 @@ code {
 .collection .collection-item{
   color:#000 !important;
 }
-.sidenav{
-  width:70% !important;
-}
 
 .title-image{
-    padding-top:20%;
+    padding-top:15%;
 }
 .register-button{
-  padding-top: 15%;
-  padding-bottom:30%;
+  padding-top: 10%;
 }
 .table-div{
-  padding-top:10%;
-  padding-bottom: 15%;
+  overflow-x: scroll;
+
+}
+footer {
+  padding-top: 20%;
 }
 
+.schedulde{
+  display: table;
+  height: auto;
+  max-height:80vh;
+  overflow-y: auto;
+}
 table{
-  height: 60%;
-  width: 100%;
-  overflow-x: scroll !important;
+  border-collapse: collapse;
 }
 
 table td{
   border: 1px solid #000 !important;
+}
+
+@media only screen and (max-width: 600px){ 
+.schedulde{
+  width: 100vh !important;
+}
+.table-div{
+  height: 60% !important;
+  width: 90% !important;
+}
+}
+@media only screen and (min-width: 600px){ 
+  .parallax-container {
+  height: 100vh !important;
+}
+.schedulde{
+  width: 100wh !important;
+}
+
+
+}
+ .card-Image{
+  width: 100%;
 }

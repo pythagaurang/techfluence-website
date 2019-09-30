@@ -1,24 +1,31 @@
 import React,{Component} from 'react'
 import {Link} from 'react-router-dom'
-import arch from '../Assets/logo1.png'
 import {connect} from 'react-redux'
 
+
 class event extends Component{
+
   render() {
     console.log(this.props)
     const { events } = this.props;
     const eventList = events.length ? (
       events.map(event => {
-        return(
-          < div className = "event card col s12 m12 l5 offset-l1 left-align" key={event.id} >
-            <img src={arch} alt="" />
-            <div className="card-content">
-              <Link to={'/events/' + event.id}>
-                <span className="card-title">{event.title}</span>
-              </Link>
-            </div>
-          </div>
-          
+        return(        
+  <div class="col s12 m6 l4">
+    <div class="card">
+      <div class="card-image">
+      <img classname="card-Image l3 " src = {require('../Assets/'+event.id+'.png')} />
+      </div>
+      <div class="card-content">
+        {event.shortdesc}
+      </div>
+      <div class="card-action">
+      <Link to={'/events/' + event.id}>
+      <span className="card-title"><b>{event.title}</b></span>
+      </Link>
+      </div>
+    </div>
+  </div>
         )
         })
       ) : (
@@ -26,9 +33,9 @@ class event extends Component{
       )
   return (
     <div>
-      <div className="container home row">
+      <div className="container row">
         <h4 className="center">Events</h4>
-        <p>{eventList}</p>
+        {eventList}
       </div>
     </div>
   )}

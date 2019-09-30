@@ -1,25 +1,38 @@
-import React from 'react'
-import image from '../Assets/image1.png'
-import gec from '../Assets/geclogo.jpg'
-import intensa from '../Assets/intensalogo.jpg'
+import React,{Component} from 'react'
+import image from '../Assets/image2.png'
+import gec from '../Assets/geclogo.png'
+import intensa from '../Assets/intensalogo.png'
+import header from '../Assets/header.jpg'
+import M from "materialize-css/dist/js/materialize.min.js";
 
-const Home = (props) => {
-
+class Home extends Component{
+  componentDidMount(){
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.parallax');
+      var instances = M.Parallax.init(elems, {});
+    }); 
+  }
+  render () {
   return (
     <div>
-      <div className="center-align container">
+      <div className="center-align parallax-container">
+      <div>
+      <div class="parallax"><img src={header}></img></div>
         <img className="responsive-img title-image" src={image} />
         <div className="row">
           <div className="col s12 l2 m2 offset-l3 offset-m3 center-align "><h6>Presented by</h6></div>
-          <div className="col s4 l1 m2 offset-s1 right-align"><img src={gec} height="50px" /></div>
+          <div className="col s4 l1 m2 offset-s1 right-align"><img src={gec} height="70px" /></div>
           <div className="col s2 l1 m1 "><h6>and</h6></div>
-          <div className="col s4 l1 m2 left-align"><img src={intensa} height="50px" /></div>
+          <div className="col s4 l1 m2 left-align"><img src={intensa} height="70px" /></div>
         </div>
         <div className="register-button"><a className="btn-large indigo darken-3 center waves-effect waves-light" target="_blank" href="https://forms.gle/vG49Q7HFaZVjoE8b9">Register</a></div>
+        </div>
       </div>
-      <div className="box hide-on-large" height="1000px !important"/>
-      <div className="container table-div">
-      <table className="highlight centered "> 
+      <div className="container center-align table-div section">
+        <span><h3>Schedulde</h3></span>
+      <table className="highlight centered schedulde ">   
+      <thead></thead>
+      <tbody></tbody>
         <tbody>
           <tr height="22px">
             <td width="36.2667px height: 22px;">&nbsp;Day</td>
@@ -32,8 +45,8 @@ const Home = (props) => {
             <td width="86px" height="22px">14</td>
             <td width="86px" height="22px">15</td>
             <td width="86px" height="22px">16</td>
-          </tr>`
-<tr height="22px">
+          </tr>
+            <tr height="22px">
             <td width="36.2667px" height="22px">&nbsp;1</td>
             <td width="136.733px" height="22px">&nbsp;IT Auditorium</td>
             <td width="272px" height="22px" colspan="3">&nbsp;&nbsp; Inaugration Ceremony</td>
@@ -117,6 +130,7 @@ const Home = (props) => {
       </div>
     </div>
   )
+  }
 }
 
 export default Home
