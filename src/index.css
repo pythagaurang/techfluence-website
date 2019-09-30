@@ -86,3 +86,18 @@ table td{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.details, .instructions {
+  border:1px solid grey;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  border-radius: 10px;
+  padding-right: 5px;
+  box-shadow: 0 0 50px #8867ff65;
+}
+.event{
+  border:1px solid grey;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  border-radius: 10px;
+  box-shadow: 0 0 50px #8867ff65;
+}
