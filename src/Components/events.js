@@ -8,7 +8,7 @@ class events extends Component {
   render() {
     console.log(this.props)
     const event = this.props.event ? (
-      <div className="event center-align container">
+      <div className="event center-align ">
         <h2 className="center-align"><b>{this.props.event.title}</b></h2>
         {this.props.event.collab  ? (<h6>In collaboration with {this.props.event.collab}</h6>):(<p/>)}
         <div className="details container">
