@@ -33,18 +33,10 @@ code {
   color:#000 !important;
 }
 
-.title-image{
-    padding-top:15%;
-}
-.register-button{
-  padding-top: 10%;
-}
+
 .table-div{
   overflow-x: scroll;
 
-}
-footer {
-  padding-top: 20%;
 }
 
 .schedulde{
@@ -65,6 +57,12 @@ table td{
 .schedulde{
   width: 100vh !important;
 }
+.title-image{
+  padding-top:15%;
+}
+.register-button{
+padding-top: 10%;
+}
 .table-div{
   width: 90% !important;
 }
@@ -72,6 +70,12 @@ table td{
 @media only screen and (min-width: 600px){ 
   .parallax-container {
   height: 100vh !important;
+}
+.title-image{
+  padding-top:20vh;
+}
+.register-button{
+padding-top: 10vh;
 }
 .schedulde{
   width: 100wh !important;
